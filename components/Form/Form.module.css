@@ -1,0 +1,22 @@
+.container {
+    width: 45rem;
+    padding: 5rem;
+    background: linear-gradient(to left, #0063a0, #64d9ed);
+    /*float: right;*/  
+}
+
+.form {
+    padding: 2rem;
+    width: 30rem;
+    /*float: right;*/
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: right;
+    
+}
+
+.form label{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

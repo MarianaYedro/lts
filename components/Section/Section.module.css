@@ -1,0 +1,29 @@
+.services {
+    margin-top: -6px;
+    background: linear-gradient(to left, #0063a0, #64d9ed);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    margin-top: -111px;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+}
+
+.box a {
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 1rem;
+}

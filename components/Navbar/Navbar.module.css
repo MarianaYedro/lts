@@ -1,0 +1,23 @@
+.nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    color: #606060;  
+}
+
+.navBox {
+    padding-top: 0.5rem;
+    padding-top: 1rem;
+}
+
+.navBox a{
+    padding-left: 2rem;
+}
+
+.navBox a:hover {
+    color: #368ddd;
+}

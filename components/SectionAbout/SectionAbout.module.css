@@ -1,0 +1,38 @@
+.about {
+    padding: 3rem;
+    display: flex;
+}
+
+.box {
+    width: 40rem;
+}
+
+.box h2 {
+    color: #368ddd;
+}
+
+.box p {
+    color: #606060;
+}
+
+.box h4 {
+    color: #368ddd;
+    font-weight: 100;
+}
+
+.box button {
+    border: none;
+    background-color: #368ddd;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+
+.img {
+    padding-left: 10rem;
+    margin-bottom: -54px;
+}
+
+
+

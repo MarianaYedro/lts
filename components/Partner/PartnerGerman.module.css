@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    background-color: #f0f0f0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.container h2 , .container h4{
+    color: #368ddd;
+}
+
+.box {
+    width: 50%;
+    padding-left: 5rem;
+}
+
+.img {
+    width: 40%;
+    margin-bottom: -20px;
+    
+}
+
+.container p {
+    color: #606060;
+}
+
+.container li {
+    color: #606060;
+    font-weight: 500;
+
+}
+
+.container button {
+
+}
+
+.box button {
+    border: none;
+    background-color: #368ddd;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
