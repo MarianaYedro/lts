@@ -7,26 +7,32 @@ export default function Partner() {
   return (
     <div className={styles.container}>
         <div className={styles.box}>
-            <h2>Socio Principal:</h2>
-            <h2>Germán A. Lopez Toussaint</h2>
+            <h2 className={styles.title1}>Asociado:</h2>
+            <h2 className={styles.title2}>Germán A. Lopez Toussaint</h2>
             <h4>Resúmen de Antecedentes Profesionales</h4>
-            <p>Asesoró en aspectos de planificación, cumplimiento y control tributario a más de 100 firmas
-                industriales (metalúrgica aceros, tubos de acero, alambre, insumos para la industria petrolera,
-                prótesis odontológicas con tecnología nuclear, desarrollo con tecnología nuclear de
-                prótesis óseas, alimentos, fraccionamiento especies, productos eléctricos, cosméticos, plásticos,
-                editorial, edición de publicaciones, impresiones, imprentas rápidas electrónicas, anteojos,
-                juguetes y rodados infantiles, máquinas para juego, textiles), mineras (canteras, minas), constructoras
-                (obras civiles e industriales, viales, estructuras metálicas, grandes obras eléctricas,)
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis odio vitae urna
+                molestie blandit. Duis eu ornare quam, faucibus fringilla enim. Phasellus cursus, dui in pretium
+                molestie, elit eros pharetra justo, eget blandit felis velit eu nunc. Donec nunc ex, fermentum
+                nec accumsan sed, rutrum at felis. Mauris a semper nulla, eget mollis elit. In ac neque vitae
+                eros suscipit hendrerit. Etiam urna nunc, ultrices vitae aliquet et, ultrices ac lorem. Sed porta id
+                nulla nec maximus. Quisque vel ullamcorper eros. In rhoncus accumsan risus ut ornare. Duis at
+                vehicula ex. In hac habitasse platea dictumst. Duis mattis volutpat erat vel posuere. Nulla in
             </p>
-            <button><Link href="/"><a>Ver más</a></Link></button>
-            <button><Link href="/"><a>Descargar resúmen</a></Link></button>
-            <li>Contador Público – FCE – UBA.</li>
-            <li>Especializado en Tributación, Finanzas Públicas e Integración Regiona.</li>
-            <li>Especialista en Docencia Universitaria, área de especialidad Finanzas Públicas.</li>
-            <li>Cursó estudios de Economía – FCE – UBA.</li>
-            <li>Profesor Adjunto y Titular.</li>
+
+            
+              <button><Link href="/"><a>Ver más</a></Link></button>
+              <button><Link href="/"><a>Descargar resúmen</a></Link></button>
+            
+
+            <div className={styles.li }>
+              <li>Contador Público – FCE – UBA (2005).</li>
+              <li>Profesor auxiliar de grado – FCE – UBA.</li>
+              <li>Miembro Adherente de la Asociación Argentina de Estudios Fiscales.</li>
+              <li>Co-autor del libro “Liquidando Impuesto a la Ganancia Mínima Presunta”.</li>
+              <li>Autor y conferencista en temas de la especialidad.</li>
+            </div>
         </div>
-        <div className={styles.img}><Image src="/img/about/leandro.png" width={780} height={495} alt="lts" /></div>
+        <div className={styles.img}><Image src="/img/about/leandro.png" width={781} height={496} alt="lts"/></div>
     </div>
   )
 }

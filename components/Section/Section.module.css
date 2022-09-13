@@ -1,9 +1,10 @@
 .services {
-    margin-top: -6px;
+    margin-top: -70px;
     background: linear-gradient(to left, #0063a0, #64d9ed);
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -16,7 +17,7 @@
 .box {
     display: flex;
     flex-direction: column;
-    width: 25rem;
+    width: 22rem;
     padding-left: 5rem;
     padding-right: 5rem;
     text-align: center;
@@ -26,4 +27,8 @@
     color: #ffffff;
     font-weight: bold;
     padding-top: 1rem;
+}
+
+.box a:hover {
+    opacity: 0.5;
 }

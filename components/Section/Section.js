@@ -1,34 +1,38 @@
+import PropTypes from "prop-types";
+import {useMemo} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "./Section.module.css"
 
-export default function Section() {
-  return (
-    <section className={styles.services}>
-            <div className={styles.box}>
-              <Image src="/img/home/services/consultoria.svg" width={100} height={80} alt="lts" /> 
-              <Link href="../Consultoria/SliderServices"><a>Consultoría Tributaria</a></Link>
-            </div>
-            
-            <div className={styles.box}>
-              <Image src="/img/home/services/pericias.svg" width={100} height={80} alt="lts" />
-              <Link href="/"><a>Pericias Tributarias</a></Link>
-            </div>
-
-            <div className={styles.dot}>
-            <Image src="/img/home/services/dot.svg" width={146} height={73} alt="lts" />
-            </div>
-            
-            <div className={styles.box}>
-              <Image src="/img/home/services/estudios.svg" width={100} height={80} alt="lts" />
-              <Link href="/"><a>Estudios y Consultores Relacionados</a></Link>
-            </div>
-            
-            <div className={styles.box}>
-              <Image src="/img/home/services/capacitacion.svg" width={100} height={80} alt="lts" />
-              <Link href="/"><a>Capacitación</a></Link>
-            </div>
+const Section = ({elements}) => {
+  const node = useMemo(
+    () =>
+      elements.map((e)=>{
+        const {image, to} =e;
+        return (
+          <section>
+              <div className={styles.box} id="services"> 
+                <Link href="/">
+                  <a><Image src={image} width={100} height={80} alt="consultoria tributaria" /></a>
+                </Link>
+                <Link href="/"><a>{to}</a></Link>
+              </div>
           </section>
-  )
+      );
+}), [elements]
+);
+return <div  className={styles.services}>{node}</div>;
+};
+
+
+Section.PropTypes ={
+  elements: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string,
+      to: PropTypes.string,
+    })
+    ).isRequired,
 }
+
+export default Section;

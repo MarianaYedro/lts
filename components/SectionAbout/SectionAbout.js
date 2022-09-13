@@ -1,24 +1,21 @@
+import PropTypes from "prop-types";
 import React from 'react';
 import styles from './SectionAbout.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
 
-export default function SectionAbout() {
+
+const SectionAbout= ({title, text, subtitle, button}) => {
   return (
     <section className={styles.about}>
         <div className={styles.box}>
 
-            <h2>Sobre nosotros</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium velit porta
-                lectus tristique congue. Sed sit amet venenatis lorem. Pellentesque lacus diam,
-                tempor id est efficitur, placerat viverra nunc. Proin in tincidunt tortor. Donec 
-                felis venenatis, malesuada augue et, tincidunt quam. Curabitur condimentum eu ante
-                liquet posuere. Vivamus ac leo a magna cursus mollis. Proin mollis quis dui blandit
-                lacinia. Nam iaculis lectus non laoreet imperdiet.</p>
-            <h4>Socio Principal: Germán A. Lopez Toussaint Asociado: Leandro A. Sclavo</h4>
+            <h2>{title}</h2>
+            <p>{text}</p>
+            <h4>{subtitle}</h4>
             
-            <button><Link href="/"><a>Certificaciones</a></Link></button>
+            <button><Link href="/"><a>{button}</a></Link></button>
         
         </div>
 
@@ -28,5 +25,15 @@ export default function SectionAbout() {
 
 
     </section>
-  )
+  );
+};
+
+SectionAbout.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  button: PropTypes.string.isRequired,
+
 }
+
+export default SectionAbout;

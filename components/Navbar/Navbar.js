@@ -6,14 +6,20 @@ import styles from "./Navbar.module.css"
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
-        <div><Image src="/img/lts-logo.svg" width={170} height={50} alt="lts" /></div>
+          <div>
+            <Link href="/home/"><a>
+              <Image src="/img/lts-logo.svg" width={170} height={50} alt="lts" />
+              </a>
+            </Link>
+          </div>
+
             <div className={styles.navBox}>
-                <Link href="/services"><a>Servicios</a></Link>
-                <Link href="/about/about"><a>Sobre Nosotros</a></Link>
-                <Link href="/"><a>Nuestros Clientes</a></Link>
+                <Link href="/home/#services"><a>Servicios</a></Link>
+                <Link href="/about"><a>Sobre Nosotros</a></Link>
+                <Link href="/home/#customers"><a>Nuestros Clientes</a></Link>
                 <Link href="/"><a>Certificaciones</a></Link>
-                <Link href="/contact"><a>Contacto</a></Link>
+                <Link href="/home/#contact"><a>Contacto</a></Link>
             </div>
     </nav>
-  )
+  );
 }

@@ -28,6 +28,9 @@
     border-radius: 5px;
 }
 
+.box button:hover {
+    background-color: #52a4f1;
+}
 
 .img {
     padding-left: 10rem;

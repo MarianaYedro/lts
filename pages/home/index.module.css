@@ -6,8 +6,23 @@
     background-color: #f0f0f0;
 }
 
-
-.form {
+.contact {
     display: flex;
     flex-direction: row;
 }
+
+.map {
+    border: 0;
+}
+
+.rrss {
+    position:absolute;
+	top:550px;
+	left:42px;
+}
+
+
+
+
+
+

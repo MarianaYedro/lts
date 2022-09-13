@@ -1,0 +1,15 @@
+.rrss {
+    position:absolute;
+	top:550px;
+	left:42px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    color: #368ddd;
+}
+
+
+
