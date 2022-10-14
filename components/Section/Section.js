@@ -14,7 +14,7 @@ const Section = ({elements}) => {
           <section>
               <div className={styles.box} id="services"> 
                 <Link href="/">
-                  <a><Image src={image} width={100} height={80} alt="consultoria tributaria" /></a>
+                  <a className={styles.img}><Image src={image} width={100} height={80} /></a>
                 </Link>
                 <Link href="/"><a>{to}</a></Link>
               </div>

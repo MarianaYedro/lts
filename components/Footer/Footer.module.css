@@ -17,6 +17,18 @@
     width: 20rem;
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      
+    }
+    .box {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
 /*footer*/
 .all {
     display: flex;
@@ -27,4 +39,32 @@
     background: linear-gradient(to left, #0063a0, #64d9ed);
 }
 
+@media (max-width: 768px) {
+    .all{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
 
+@media (max-width: 428px) {
+    .container{
+        display: block;
+        text-align: center;
+        padding-left: 4rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      
+    }
+   .box{
+        padding: 0.5rem;
+   }
+   
+}
+
+@media (max-width: 330px) {
+    .container{
+        padding-left: 1rem;
+        
+    }
+}

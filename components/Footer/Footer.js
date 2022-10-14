@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.box}>
         <h6>ACERCA DE</h6>
               <li>Servicios</li>
               <li>Sobre nosotros</li>
@@ -13,7 +13,7 @@ export default function Footer() {
               <li>Contacto</li>
       </div>
         
-      <div>
+      <div className={styles.box}>  
         <h6>DIRECCIÓN</h6>
             <li>Dr. Mariano Moreno 957,</li>
             <li>Piso 7 – Oficina “3” (C1091AAS)</li>
@@ -21,14 +21,14 @@ export default function Footer() {
             <li>Argentina</li>
       </div>
 
-      <div>
-        <h6>DIRECCIÓN</h6>
+      <div className={styles.box}>
+        <h6>CONTACTO</h6>
             <li>Tel.: (+5411) 5272–1100</li>
             <li>Mail: info@lopeztoussaint.com.ar</li>
       </div>
 
-      <div>
-        <h6>DIRECCIÓN</h6>
+      <div className={styles.box}>
+        <h6>RRSS</h6>
             <li>Facebook</li>
             <li>Instagram</li>
             <li>Linkedin</li>
