@@ -1,7 +1,6 @@
 {
   "name": "lts-dev",
   "version": "0.1.0",
-  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "npm run dev",
@@ -24,7 +23,6 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "next": "12.2.5",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5"
   }
