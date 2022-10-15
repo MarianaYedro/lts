@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import {useMemo} from "react";
+//import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,7 +12,7 @@ const Section = ({elements}) => {
       elements.map((e)=>{
         const {image, to} =e;
         return (
-          <section>
+          <section key={elements}>
               <div className={styles.box} id="services"> 
                 <Link href="/">
                   <a className={styles.img}><Image src={image} width={100} height={80} /></a>
@@ -22,7 +23,7 @@ const Section = ({elements}) => {
       );
 }), [elements]
 );
-return <div  className={styles.services}>{node}</div>;
+return <div  className={styles.services} key={elements}>{node}</div>;
 };
 
 
