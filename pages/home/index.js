@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Layout from "../../components/Layout/Layout";
 import Navbar from "../../components/Navbar/Navbar";
 import SliderCustomers from "../../components/Customers/SliderCustomers";
-//import Section from "../../components/Section/Section";
+import Section from "../../components/Section/Section";
 import SectionAbout from "../../components/SectionAbout/SectionAbout";
 import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
@@ -36,7 +36,7 @@ export const Home = ({ data }) => {
                             
                     </div>
 
-                    
+                    <Section elements={section.elements}/>
 
                     <SliderServices services={services}/>  
 
